@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Singiri Mahitha • Data analyst & web developer</title>
+  <meta name="description" content="Portfolio of Singiri Mahitha — Data analyst & web developer with Python experience. Projects: Sales Dashboard, TO-DO-LIST , Tic-Tac-Toe. Based in Hyderabad." />
+  <style>
+    :root{
+      --card:#099b63; --ink:#e7eaf3; --muted:#a9b0c7; --brand:#6ae3ff; --accent:#8fff9f;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0; 
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      background-attachment: fixed;
+      background-size: cover;
+      color:var(--ink);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji"
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px 0 12px;border-bottom:1px solid #22263d}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:6px 10px;border-radius:12px;background:#12162a}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .title{font-size:48px;line-height:1.1;margin:8px 0}
+    .subtitle{font-size:18px;color:var(--muted)}
+    .tag{display:inline-block;margin-right:8px;margin-top:8px;padding:6px 10px;border-radius:999px;background:#12162a;border:1px solid #22263d;color:#cfe4ff}
+    .card{background:var(--card);border:1px solid #22263d;border-radius:18px;padding:22px}
+    h2{font-size:28px;margin:0 0 10px}
+    h3{margin:0 0 8px}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .pill{display:inline-block;background:#12162a;border:1px solid #22263d;border-radius:999px;padding:6px 10px;margin:6px 6px 0 0;color:#cfe4ff}
+    .timeline li{margin-bottom:16px}
+    .project{display:grid;gap:12px}
+    .project img{width:100%;height:160px;object-fit:cover;border-radius:12px;border:1px solid #22263d;background:#0b0e1a}
+    .cta{display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#001018;font-weight:600}
+    footer{border-top:1px solid #db0707;margin-top:28px;padding:22px 0;color:var(--muted)}
+    .muted{color:var(--muted)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}.title{font-size:36px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:center">
+        <strong style="font-size:18px">Singiri Mahitha</strong>
+        <nav aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="intro">
+      <div>
+        <p class="tag"> Data analyst & web developer</p>
+        <p class="tag">Python</p>
+        <h1 id="intro" class="title">Hi, I'm <span style="color:var(--brand)">Singiri Mahitha</span><br/>from Hyderabad.</h1>
+        <p class="subtitle">I build fast, user-friendly mobile apps with Flutter and ship end-to-end features using Python where needed.</p>
+        <p style="margin-top:12px">
+          <a class="cta" href="#contact">Contact Me</a>
+          <a style="margin-left:12px" href="mahitha.pdf">Download CV</a>
+        </p>
+      </div>
+      <div class="card">
+        <!-- Optional profile image -->
+        <img src="profile.jpg" alt="Portrait of Singiri Mahitha" style="width:100%;border-radius:14px;border:1px solid #22263d;aspect-ratio:1/1;object-fit:cover;">
+      </div>
+    </section>
+
+    <section id="about" class="grid cols-2" style="margin-top:28px">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          I'm a 2025 graduate passionate about crafting innovative, cross-platform mobile applications.
+          As a <strong>Data Analyst</strong> with hands-on <strong>Python</strong> experience, I focus on building Dashboards .which is used the information 
+          for the visualization of the sales and calculating the Average,overall prediction.
+
+        </p>
+        <p>When I get the data, — it keeps me creative and balanced.</p>
+      </div>
+      <div class="card" id="skills">
+        <h2>Skills</h2>
+        <div>
+          <span class="pill">Data visualization</span>
+          <span class="pill">HTML</span>
+          <span class="pill">Python</span>
+          <span class="pill">SQLite</span>
+          <span class="pill">Git & GitHub</span>
+        
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="grid cols-2" style="margin-top:18px">
+      <div class="card">
+        <h2>Experience</h2>
+        <ul class="timeline">
+          <li>
+            <h3> Data Analyst & Web Developer</h3>
+            <div class="muted">2024 – 2025</div>
+            <ul>
+              <li>Implemented responsive UI, form validation, and local storage (SQLite).</li>
+              <li>Created dashboard based non the performance of Virat kohli batting aganist the teams.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li>
+            <h3>B.Tech • Prakasam  Engineering college </h3>
+            <div class="muted">2025</div>
+          </li>
+          <li>
+            <h3>Intermediate • S.V. JUNIOR College</h3>
+            <div class="muted">2021</div>
+          </li>
+          <li>
+            <h3>SSC • Z.P.H.S GIRLS  High School</h3>
+            <div class="muted">2019</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" style="margin-top:18px">
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Web Developer</h3>
+          <p>Creating web pages by using HTML,CSS.</p>
+        </div>
+        <div class="card">
+          <h3>Web Integrations</h3>
+          <p>REST API integration, authentication (email/OTP), and real-time features with Firebase.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" style="margin-top:18px">
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:mahitha.dev@example.com">mahitha.dev@example.com</a></p>
+          <p>Phone: <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+          <p>Location: Hyderabad, India</p>
+        </div>
+        <form class="card" onsubmit="event.preventDefault(); alert('Thanks! I\'ll get back to you soon.');">
+          <h3>Send a message</h3>
+          <label>Name<br/><input required aria-label="Name" style="width:100%;padding:10px;border-radius:10px;border:1px solid #22263d;background:#0b0e1a;color:var(--ink)"></label><br/><br/>
+          <label>Email<br/><input type="email" required aria-label="Email" style="width:100%;padding:10px;border-radius:10px;border:1px solid #22263d;background:#0b0e1a;color:var(--ink)"></label><br/><br/>
+          <label>Message<br/><textarea required aria-label="Message" rows="5" style="width:100%;padding:10px;border-radius:10px;border:1px solid #22263d;background:#0b0e1a;color:var(--ink)"></textarea></label><br/><br/>
+          <button class="cta" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      <div class="muted">© <span id="y"></span> Singiri Mahitha. Built with care.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
